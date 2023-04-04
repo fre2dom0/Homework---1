@@ -1,0 +1,140 @@
+.popularCategories{
+    transition: all 0.5s ease-in-out;
+}
+
+.popularCategories .titleCol{
+    padding: 130px 0;
+}
+
+
+.popularCategories .titleCol .popularCategoriesTitle{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.popularCategories .titleCol .popularCategoriesDes{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(142, 153, 174);
+}
+
+.popularCategoriesMenus{
+    width: 90%;
+    border-radius: 10px;
+    background-color: rgb(43, 45, 65);
+}
+
+.firstB{
+    border-top-left-radius: 10px;
+}
+
+.lastB{
+    border-bottom-left-radius: 10px;
+}
+
+.popularCategoriesMenus .cButton{
+    height: 150px;
+    width: 100%;
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+}
+
+.noActive{
+    background-color: rgb(142, 153, 174);
+    transition: all 0.5s ease-in-out;
+}
+
+.activeB{
+    background-color: inherit;
+    transition: all 0.5s ease-in-out;
+}
+
+.popularCategoriesMenus .buttonBorder{
+    border-top: 1px solid rgb(44, 44, 44);
+    border-bottom: 1px solid rgb(44, 44, 44);
+}
+
+.popularCategoriesMenus .cButton .buttonText{
+    text-align: start;
+    width: 60%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.popularCategoriesMenus .cButton .buttonIcon{
+    margin: 0 20px;
+    padding: 20px;
+    
+    font-size: 25px;
+    color: rgb(142, 153, 174);
+    
+    border-radius: 50%;
+    background-color: white;
+}
+
+.content .row{
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.content .text{
+    padding: 0 0px 0 50px;
+    height: 100%;
+}
+
+.content .text .contentTitle{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.content .text .contentDes{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 27px;
+    margin-bottom: 35px;
+    
+}
+
+.content .text .contentButton{
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+    font-size: 18px;
+}
+
+.content .text .contentButton .buttonIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+
+    background-color: rgb(142, 153, 174);
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.content .image{
+    height: 100%;
+    padding: 50px 100px;
+}
+
+.content .image .contentImg{
+    border-radius: 10px;
+}

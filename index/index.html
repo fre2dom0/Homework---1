@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/nav/navigationStyle.css">
+    <link rel="stylesheet" href="../styles/nav/findFormStyle.css">
+    <link rel="stylesheet" href="../styles/main/populerCategories.css">
+    <link rel="stylesheet" href="../styles/main/recentListing.css">
+    <link rel="stylesheet" href="../styles/footer/footer.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f8bdf83e95.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="body container-fluid p-0">
+        <header style="position: relative;">
+
+            <nav>
+
+                <div class="color">
+                    <span class="display displayNo"></span>
+                    <div class="navigation navigationDefault row">
+
+                        <div class="firstNav c col-md-2 col-sm-12 d-flex align-items-center justify-content-start">
+
+                            <i class="navLogoColorWhite navLogo fa-solid fa-list"></i>
+                            <h3 class="navLogoTextColorWhite navLogoText">Plotlist</h3>
+
+                        </div>
+
+                        <div class="secondNav c col-md-10  col-sm-12 d-flex align-items-center justify-content-end">
+
+                            <ul class="d-flex align-items-center justify-content-end p-0 m-0">
+                                <li class="navList">
+                                    <a class="navLinkColorWhite navLink" href="#">Home</a>
+                                </li>
+                                <li class="navList">
+                                    <a class="navLinkColorWhite navLink" href="#">Category</a>
+                                </li>
+                                <li class="navList">
+                                    <a class="navLinkColorWhite navLink" href="#">Listing</a>
+                                </li>
+                                <li class="navList">
+                                    <a class="navLinkColorWhite navLink" href="#">Contact Us</a>
+                                </li>
+                                <li class="navList">
+
+                                    <button class="navButtonBColorWhite navButton d-flex align-items-center justify-content-center">
+                                        <i class="navButtonSymbol fa-solid fa-circle-plus"></i> <span class="navButtonText">Add Your Listing</span>
+                                    </button>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="findForm row d-flex align-items-center">
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <h6 class="listingNumber">OVER 36,500+ ACTIVE LISTINGS</h6>
+                            </div>
+
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <h1 class="title">Find Nearby Places & Things</h1>
+                            </div>
+
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <form action="" class="find d-flex align-items-center justify-content-lg-center">
+                                        <div class="findCol col-lg-3 px-2 ">
+                                            <select class="selectArea input ">
+                                                    <option selected>All Areas</option>
+                                                    <option value="New Village">New Village</option>
+                                                    <option value="Old Town">Old Town</option>
+                                                    <option value="Modern City">Modern City</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="findCol col-lg-3 px-3 borderLeft">
+                                            <input class="enterLocation input" type="text" placeholder="Enter a Location">
+                                        </div>
+                                        <div class="findCol col-lg-3 px-3 borderRight">
+                                            <select class="priceRange input">
+                                                <option selected>Price Range</option>
+                                                <option value="$100 - $250">$100 - $250</option>
+                                                <option value="$250 - $500">$250 - $500</option>
+                                                <option value="$1000 or more">$1000 or more</option>
+                                        </select>
+                                        </div>
+                                        <div class="findCol col-lg-3 px-2 findButtonCol">
+                                            <button class="findButton input">
+                                                <i class="buttonCircle fa-solid fa-magnifying-glass"></i> Search Now
+                                            </button>
+                                        </div>
+                                </form>
+                            </div>
+
+                            <div class="categories col-12 d-flex align-items-center justify-content-around">
+                                <div class="categoriesAll d-flex align-items-center justify-content-around">
+                                    <a href="#" class="category d-flex flex-column align-items-center">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-house"></i>
+                                        </span>
+                                        <span class="iconText">Apartments</span>
+                                    </a>
+
+                                    <a href="#" class="category d-flex flex-column align-items-center">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-burger"></i>
+                                        </span>
+                                        <span class="iconText">Food & Life</span>
+                                    </a>
+
+                                    <a href="#" class="category d-flex flex-column align-items-center">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-car"></i>
+                                        </span>
+                                        <span class="iconText">Cars</span>
+                                    </a>
+
+                                    <a href="#" class="category d-flex flex-column align-items-center">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </span>
+                                        <span class="iconText">Shopping</span>
+                                    </a>
+
+                                    <a href="#" class="category d-flex flex-column align-items-center">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-earth-americas"></i>
+                                        </span>
+                                        <span class="iconText">Travelling</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="popularCategories row d-flex justify-content-center">
+                <div class="row">
+                    <div class="titleCol col-lg-12 d-flex flex-column align-items-center">
+                        <h2 class="popularCategoriesTitle">Populer Categories</h2>
+                        <p class="popularCategoriesDes">CHECK THEM OUT</p>
+                    </div>
+                </div>
+                <div class="popularCategoriesMenus row justify-content-center">
+                    <div class="buttons p-0 col-lg-3 d-flex flex-column">
+                        <button class="c1 cButton activeB firstB d-flex justify-content-center align-items-center">
+                            <i class="buttonIcon fa-solid fa-house"></i>
+                            <p class="buttonText">Apartments</p>
+                        </button>
+                        <button class="c2 cButton noActive buttonBorder d-flex justify-content-center align-items-center">
+                            <i class="buttonIcon fa-solid fa-burger"></i>
+                            <p class="buttonText">Food & Life</p>
+                        </button>
+                        <button class="c3 cButton noActive d-flex justify-content-center align-items-center">
+                            <i class="buttonIcon fa-solid fa-car"></i>
+                            <p class="buttonText">Cars</p>
+                        </button>
+                        <button class="c4 cButton noActive buttonBorder d-flex justify-content-center align-items-center">
+                            <i class="buttonIcon fa-solid fa-cart-shopping"></i>
+                            <p class="buttonText">Shopping</p>
+                        </button>
+                        <button class="c5 cButton noActive lastB d-flex justify-content-center align-items-center">
+                            <i class="buttonIcon fa-solid fa-earth-americas"></i>
+                            <p class="buttonText">Travelling</p>
+                        </button>
+                    </div>
+                    <div class="con content content1 col-lg-9">
+                        <div class="row d-flex">
+
+                            <div class="text col-5 d-flex flex-column justify-content-center">
+                                <h6 class="contentTitle">One Of The Most Trending Stuffs Right Now!</h6>
+                                <p class="contentDes">
+                                    Plot Listing is a responsive Bootstrap 5 website template that included 4 different HTML pages. This template is provided by TemplateMo website. You can apply this layout for your static or dynamic CMS websites.
+                                </p>
+                                <button class="contentButton d-flex justify-content-center align-items-center">
+                                    <i class="buttonIcon  fa-regular fa-eye"></i>
+                                    <span class="buttonText">Discover More</span>   
+                                </button>
+                            </div>
+                            <div class="image col-7 d-flex justify-content-center align-items-center">
+                                <img class="contentImg" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/tabs-image-01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none con content content2 col-lg-9">
+                        <div class="row d-flex ">
+
+                            <div class="text col-5 d-flex flex-column justify-content-center">
+                                <h6 class="contentTitle">Food and Lifestyle category is here</h6>
+                                <p class="contentDes">
+                                    Plot Listing is a responsive Bootstrap 5 website template that included 4 different HTML pages. This template is provided by TemplateMo website. You can apply this layout for your static or dynamic CMS websites.
+                                </p>
+                                <button class="contentButton d-flex justify-content-center align-items-center">
+                                    <i class="buttonIcon  fa-regular fa-eye"></i>
+                                    <span class="buttonText">Explore More</span>   
+                                </button>
+                            </div>
+                            <div class="image col-7 d-flex justify-content-center align-items-center">
+                                <img class="contentImg" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/tabs-image-02.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none content content3 col-lg-9">
+                        <div class="row d-flex">
+
+                            <div class="text col-5 d-flex flex-column justify-content-center">
+                                <h6 class="contentTitle">Best car rentals for your trips!                                </h6>
+                                <p class="contentDes">
+                                    Did you know? You can get the best free HTML templates on Too CSS blog. Visit the blog pages and explore fresh and latest website templates.
+                                </p>
+                                <button class="contentButton d-flex justify-content-center align-items-center">
+                                    <i class="buttonIcon  fa-regular fa-eye"></i>
+                                    <span class="buttonText">More Listing</span>   
+                                </button>
+                            </div>
+                            <div class="image col-7 d-flex justify-content-center align-items-center">
+                                <img class="contentImg" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/tabs-image-03.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none content content4 col-lg-9">
+                        <div class="row d-flex">
+
+                            <div class="text col-5 d-flex flex-column justify-content-center">
+                                <h6 class="contentTitle">Shopping List: Images from Unsplash</h6>
+                                <p class="contentDes">
+                                    Image credits go to Unsplash website that provides free stock photos for anyone. Images used in this Plot Listing template are from Unsplash.
+                                </p>
+                                <button class="contentButton d-flex justify-content-center align-items-center">
+                                    <i class="buttonIcon  fa-regular fa-eye"></i>
+                                    <span class="buttonText">Discover More</span>   
+                                </button>
+                            </div>
+                            <div class="image col-7 d-flex justify-content-center align-items-center">
+                                <img class="contentImg" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/tabs-image-04.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none content content5 col-lg-9">
+                        <div class="row d-flex">
+
+                            <div class="text col-5 d-flex flex-column justify-content-center">
+                                <h6 class="contentTitle">Information and Safety Tips for Traveling</h6>
+                                <p class="contentDes">
+                                    You are allowed to use this template for your commercial websites. You are NOT allowed to redistribute this template ZIP file on any Free CSS collection websites.
+                                </p>
+                                <button class="contentButton d-flex justify-content-center align-items-center">
+                                    <i class="buttonIcon  fa-regular fa-eye"></i>
+                                    <span class="buttonText">Read More</span>   
+                                </button>
+                            </div>
+                            <div class="image col-7 d-flex justify-content-center align-items-center">
+                                <img class="contentImg" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/tabs-image-05.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="recentListing">
+                
+                <div class="recentListingText row">
+                    <div class="col-lg-12 d-flex flex-column align-items-center justify-content-center">
+                        <h3 class="title">Recent Listing</h3>
+                        <h6 class="desc">CHECK THEM OUT</h6>
+                    </div>
+                </div>
+
+                    <div class="listPlace listPlace1 row">
+                        <!--Ayrım-->
+                        <div class="list list1 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-01.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">1. First Apartment Unit</h3>
+                                        <p class="by">by: Sale Agent</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$450 - $950 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 2760 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                4 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                4 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(18) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!--Ayrım-->
+                        <div class="list list2 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-02.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">2. Another House of Gaming</h3>
+                                        <p class="by">by: Top Sale Agent</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$1400 - $3500 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 3650 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                4 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                3 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(24) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!--Ayrım-->
+                        <div class="list list3 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-03.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">3. Secret Place Hidden House</h3>
+                                        <p class="by">by: Best Property</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$1500 - $3600 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 5500 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                4 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                3 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(18) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="listPlace listPlace2 row">
+                        <!--Ayrım-->
+                        <div class="list list1 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-04.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">4. Sunshine Fourth Apartment</h3>
+                                        <p class="by">by: Sale Agent</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$3600 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 3660 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                5 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                3 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(18) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!--Ayrım-->
+                        <div class="list list2 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-05.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">5. Best House of The Town</h3>
+                                        <p class="by">by: Top Sale Agent</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$5600 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 1750 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                6 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                3 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(32) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!--Ayrım-->
+                        <div class="list list3 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-06.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">6. Amazing Pool Party Villa</h3>
+                                        <p class="by">by: Best Property</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$3850 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 3660 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                4 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                3 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(40) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="listPlace listPlace3 row">
+                        <!--Ayrım-->
+                        <div class="list list1 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-05.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">7. Sunny Apartment</h3>
+                                        <p class="by">by: Sale Agent</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$5450 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 1640 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                8 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                5 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(24) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!--Ayrım-->
+                        <div class="list list2 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-02.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">8. Third House of Gaming</h3>
+                                        <p class="by">by: Top Sale Agent</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$5520 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 1660 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                5 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                4 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(15) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!--Ayrım-->
+                        <div class="list list3 row d-flex">
+                            <div class="img col-lg-5">
+                                <img width="100%" height="" src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-06.jpg" alt="">
+                            </div>
+                            <div class="infos col-lg-7">
+                                <div style="height: 100%;" class="row">
+                                    
+                                    <div style="height: 100%;" class="info col-lg-7 d-flex flex-column justify-content-center align-items-start">
+                                        <h3 class="title">9. Relaxing BBQ Party Villa</h3>
+                                        <p class="by">by: Best Property</p>
+                                        <p class="price">
+                                            <i class="priceIcon fa-solid fa-tag"></i>
+                                            <span class="priceText">$4760 / month with taxes</span>
+                                        </p>
+                                        <p class="details">
+                                            <span class="detail">Details:</span> 2880 sq ft
+                                        </p>
+                                        <ul class="qualities">
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bed"></i>
+                                                6 Bedrooms
+                                            </li>
+                                            <li class="quality">
+                                                <i class="qualityI fa-solid fa-bath"></i>
+                                                4 Bathrooms
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <div class="rating col-lg-5 d-flex flex-column justify-content-around align-items-center">
+                                        <ul class="reviews d-flex justify-content-center">
+                                            <li class="reviewList stars">
+                                                <ul class="emptyStars d-flex">
+                                                    <li class="star"><i class="s1 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s2 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s3 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s4 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                    <li class="star"><i class="s5 starEmpty fa-regular fa-star"></i></li>
+                                                    <li style="display: none;" class="star"><i class="s1 fullStar fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </li>
+                                            <li class="reviewList review">(20) Reviews</li>
+                                        </ul>
+
+                                        <button class="contact">
+                                            <i class="buttonIcon fa-regular fa-eye"></i>
+                                            Contact Now</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="listingButtons">
+                        <button tabindex="1" class="listingButton activeButton button1"></button>
+                        <button tabindex="2" class="listingButton button2"></button>
+                        <button tabindex="3" class="listingButton button3"></button>
+                    </div>
+                </div>
+        </main>
+
+        <footer>
+            <div class="footerRow row">
+
+                <div class="col logoCol col-lg-4 d-flex flex-column">
+                    <div class="logo d-flex align-items-center">
+                        <i class="navLogo fa-solid fa-list"></i>
+                        <h3 class="navLogoText">Plotlist</h3>
+                    </div>
+
+                    <p class="descLogo">
+                        If you consider that <span>Plot Listing template</span> is useful for your website,
+                        please <span>support us</span> a little via PayPal.
+                    </p>
+                </div>
+
+                <div class="col linksCol col-lg-4 d-flex flex-column">
+                    <h4 class="title">Helpful Links</h4>
+                    <ul class="d-flex justify-content-between">
+                        <div class="group1">
+                            <li><a href="">Categories</a></li>
+                            <li><a href="">Reviews</a></li>
+                            <li><a href="">Listing</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </div>
+                        <div class="group2">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Awards</a></li>
+                            <li><a href="">Useful Sites</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="col contactCol col-lg-4">
+                    <h4 class="title">Contact Us</h4>
+                    <p class="adress">27th Street of New Town, Digital Villa</p>
+                    <ul class="d-flex justify-content-between">
+                        <li><a href="">010-020-0340</a></li>
+                        <li><a href="">090-080-0760</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="copyRight row">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column">
+                    <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.</p>
+                    <p class="design">Design: <span class="author">Muhammed Çabuk</span> </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+        <script src="../script/navScript.js"></script>
+        <script src="../script/populerCategories.js"></script>
+        <script src="../script/recentListing.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
